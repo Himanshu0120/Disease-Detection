@@ -1,0 +1,76 @@
+{%load static%}
+<html>
+    <head>
+        <title>
+            Malaria
+        </title>
+        <link rel="stylesheet", href="{%static 'app/styles.css' %}">
+        <style rel='stylesheet'>
+            @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+            h2{
+                font-family: 'DM Sans';
+                margin-left: 35%;
+                color: white;
+            }
+            img{
+                margin-left: 40%;
+                margin-top: 30px;
+            }
+            .a{
+                color: white;
+            }
+            form{
+                margin-left: 40%;
+                margin-top: 30px;
+            }
+            h3.a{
+                color:white;
+                margin-bottom: 10px;
+            }
+            #button{
+                margin-top: 60px;
+                margin-left: 80px;
+                background-color: #808080 ;
+                padding: 6px;
+                border: none;
+                border-radius: 2px;
+                color: white;
+                transition: all 0.2s ease 0s;
+            }
+            #button:hover{
+                background-color:#6d6b6b;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+        <h1>Disease Detection</h1>
+        <ul class="nav_links">
+            <li><a href="/">Home</a></li>
+            <li><a href='/heart'>Heart</a></li>
+            <li><a href="#">Cancer</a></li>
+            <li><a href="/liver">Liver</a></li>
+            <li><a href="">Malaria</a></li>
+            <li><a href="#">Pneumonia</a></li>
+            <li><a href="#">Brain Tumor</a></li>
+            <li><a href="#">Kidney</a></li>
+            <li><a href="#">Diabetes</a></li>    
+        </ul>
+        </nav>
+        
+        <h2>Welcome to Malaria Disease Detection</h2>
+        <img src="{%static 'app/malaria.jfif' %}""> 
+        <form action="#" method="post" >
+            {% csrf_token %} 
+           <h3 class="a">Upload your cell image to check:</h3>
+            <input class='a' type="file" name="fileToUpload" id="fileToUpload">
+            <div class='button'>
+                <input id='button' type="submit" value='Check Result'>
+                </div>   
+          </form>
+        
+        <footer>
+            <h3>Made By-Himanshu Srivastava and Arjun Singh</h3>
+        </footer>
+    </body>
+</html>     

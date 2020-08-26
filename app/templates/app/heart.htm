@@ -1,0 +1,134 @@
+{%load static%}
+<html>
+    <head>
+        <title>
+            Heart Disease 
+        </title>
+        <link rel="stylesheet", href="{%static 'app/styles.css' %}">
+        <style rel='stylesheet'>
+            @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+            h2{
+                font-family: 'DM Sans';
+                margin-left: 35%;
+                color: white;
+            }
+            #form{
+                
+                margin-bottom: 20px;
+                font-family: 'DM Sans';
+                border-radius: 10px;
+                margin-top: 20px;
+                width: 800px;
+                margin-left: 25%;
+                background-color: #555555;
+                color: white;
+                padding: 10px;
+            }
+            #button{
+                background-color: #808080 ;
+                padding: 6px;
+                border: none;
+                border-radius: 2px;
+                color: white;
+                transition: all 0.2s ease 0s;
+            }
+            #button:hover{
+                background-color:#6d6b6b;
+            }
+                
+            }
+            h3{
+                font-size: 40px;
+            }
+
+            div.input{
+                display: inline-block;
+                
+                margin-top: 15px;
+                margin-right: 80px;
+                margin-left: 130px;
+                
+            }
+            select{
+                padding: 1px;
+                margin-bottom: 5px;
+            }
+            div.button{
+                
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+        <h1>Disease Detection</h1>
+        <ul class="nav_links">
+            <li><a href="../">Home</a></li>
+            <li><a href="../heart">Heart</a></li>
+            <li><a href="#">Cancer</a></li>
+            <li><a href="/liver">Liver</a></li>
+            <li><a href="/malaria">Malaria</a></li>
+            <li><a href="#">Pneumonia</a></li>
+            <li><a href="#">Brain Tumor</a></li>
+            <li><a href="#">Kidney</a></li>
+            <li><a href="#">Diabetes</a></li>    
+        </ul>
+        </nav>
+        <h2>Welcome to Heart Disease Detection</h2>
+        <div id='form'>
+            <h3 style="text-align: center;font-size: larger;">Enter The Following Details</h3>
+            <form action='/'>
+                <div class="input">
+                    Age:<br><input type="text" name='age' >
+                </div>
+                <div class="input">
+                    Gender:<br><select name="Gender">
+                        <option value="1">Male</option>
+                        <option value="0">Female</option>
+                            </select>
+                </div>        
+                <div class="input">
+                    CP:<br><input type="text" name='cp' >
+                    </div>
+                <div class="input">
+                    TrestBPS:<br><input type="text" name='trestbps' >
+                </div>
+                <div class="input">
+                    Cholestrol:<br><input type="text" name='age' >
+                </div>
+                <div class="input">
+                    FBS:<br><input type="text" name='age' >
+                </div>
+                <div class="input">
+                    Restecg:<br><input type="text" name='age' >
+                </div>
+                <div class="input">
+                    Thalch:<br><input type="text" name='age' >
+                </div>
+                <div class="input">
+                    Exang:<br><input type="text" name='age' >
+                </div>
+                <div class="input">
+                    Oldpeak:<br><input type="text" name='age' >
+                </div>
+                <div class="input">
+                    Slope:<br><input type="text" name='age' >
+                </div>
+                <div class="input">
+                    CA:<br><input type="text" name='age' >
+                </div>
+                <div class="input">
+                Thal:<br><input type="text" name='age' >
+                    </div> 
+                </div>
+                <div class='button'>
+                <input id='button' type="submit" value='Check Result'>
+                </div>
+            </form>
+
+        
+        <footer>
+            <h3>Made By-Himanshu Srivastava and Arjun Singh</h3>
+        </footer>
+    </body>
+</html>     
